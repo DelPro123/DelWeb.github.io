@@ -9,7 +9,7 @@ function hamburger_nav(){
         nav.style.display = "none";
       }
 }
-function home(){
+function Home(){
   WIDTH_LIMIT=1023;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
@@ -20,7 +20,7 @@ function home(){
   }
 }
 
-function project(){
+function Project(){
   WIDTH_LIMIT=1023;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
@@ -30,7 +30,7 @@ function project(){
       nav.style.display = 'none';
   }
 }
-function skills(){
+function Skills(){
   WIDTH_LIMIT=1023;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
@@ -40,7 +40,7 @@ function skills(){
       nav.style.display = 'none';
   }
 }
-function contact(){
+function Contact(){
   WIDTH_LIMIT=1023;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
