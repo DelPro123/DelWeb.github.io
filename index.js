@@ -62,9 +62,9 @@ window.addEventListener('resize', function (e) {
 //----------------------bug cursor animatio--------------
 
 let cursor=document.querySelector(".cursor");
-document.body.onmousemove=function(e){
-    let X=e.pageX;
-    let Y=e.pageY;
+document.body.onmousemove=function(event){
+    let X=event.pageX;
+    let Y=event.pageY;
     let x= (cursor.getBoundingClientRect().left)+(cursor.clientWidth /2);
     let y= (cursor.getBoundingClientRect().top)+(cursor.clientHeight /2);
     let radian= Math.atan2(X-x, Y-y);
