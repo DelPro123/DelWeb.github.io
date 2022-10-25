@@ -436,6 +436,9 @@ footer{
 /*------------------------mobile---------------*/
 @media screen and (max-width:700px) {
     /*--------------------------Nav Page Mobile-----------------------*/
+       .nav{
+        position: absolute;
+       }
        .navbar_content{
            display: none;
            position: absolute;
@@ -526,7 +529,6 @@ footer{
        
        p #developer::before{
            content:attr(data-text);
-           display: flex;
            position: absolute;
            top: 0;
            left: 0;
@@ -551,7 +553,7 @@ footer{
        /*--------------------animate*/
        .dev{
            content: " ";
-           position: relative;
+           position: absolute;
            color: #24B477;
            font-size: 35px;
        }
