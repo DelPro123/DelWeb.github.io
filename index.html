@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/792fbaa353.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class=".body">
+    <div class="cursor fa-solid fa-bug"></div>
+    <div class="nav">
+    <div class="navbar">
+        <h1 id="del" data-name="DEL">DEL.</h1>
+        <ul class ="navbar_content" id="navbar_content">
+            <li onclick="home()"><a href="#home">home</a></li>
+            <li onclick="project()"><a href="#projects">project</a></li>
+            <li onclick="skills()"><a href="#skills">skills</a></li>
+            <li onclick="contact()"><a href="#contact">contact</a></li>
+            <a href="https://github.com/DelPro123"><li class="fa-brands fa-github" style="font-size:30px;color: #24B477;"></li></a>
+        </ul>
+        <div class="btn_bar">
+        <div class="fa-solid fa-bars" onclick="hamburger_nav()"></div>
+        </div>
+    </div>
+    </div>
+    <div class="home" id="home">
+        <div class="introduction">
+        <p id="self-intro"><span id="hi">Hi,</span> I am <span id="developer" data-text="Johndel.">Johndel.</span></p>
+        <p id="self-intro">Inspiring <span class="dev">Developer.</span></p>
+        <div class="btn">
+            <a href="/file/MyResume (1).pdf" download>
+                <button id="contact_btn">resume</button>
+            </a>
+            <a href="#projects">
+            <button id="project_btn">project</button>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="project" id="projects">
+        <br><br><br>
+        <div class="project_card">
+            <h2><i class="fa-solid fa-laptop-code"></i>Project</h2>
+            <div class="project_content">
+                <img id="project_image" src="image/Project/fixpro.png"/>
+            <div class="project_info">
+                <p class="title">ThunderPro. <span class="details">(Self Project)</span></p>
+                <p class="description">Fixpro is a outsourcing website to help the client interms of home service
+                like plumbing,fixing gudget, devices, appliances and many more..</p>
+                <div class="view-btn">
+                    <a href="https://github.com/DelPro123/fixpro.git"><li class="fa-regular fa-eye"></li></a>
+                    <a href="https://delpro123.github.io/fixpro/"><li class="fa-brands fa-github"></li></a>
+                </div>
+            </div>
+            </div>
+            <div class="project_content">
+                <img id="project_image" src="image/Project/defiquests.png"/>
+                <div class="project_info">
+                    <p class="title">defiQuests. <span class="details">(Web-Intern Project)</span></p>
+                    <p class="description">My web intern experienced, I was deployed in the web3 project and it
+                     was greate experienced to team in the Sr.Dev, Jr.Dev and QA Engineer. </p>
+                     <div class="view-btn">
+                        <a href="https://www.defiquests.com/"><li class="fa-regular fa-eye"></li></a>
+                        <a><li class="fa-solid fa-handshake-slash"></li></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project_content">
+                <embed ><iframe id="project_video"  src="https://www.youtube.com/embed/quj1K5GA1nE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></embed>
+                <div class="project_info">
+                    <p class="title">IoT-Based Fish Pond Water<br>Condition Monitoring System<br><span class="details">(Thesis Project)</span></p>
+                    <p class="description">A research project and an IoT devices to monitor the water parameter
+                    using sensors to help the fishery and aquarium breeder.</p>
+                    <div class="view-btn">
+                        <a href="https://www.youtube.com/watch?v=quj1K5GA1nE&t=3s"><li class="fa-regular fa-eye"></li></a>
+                        <a href="https://github.com/DelPro123/Thesis.git"><li class="fa-brands fa-github"></li></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project_content">
+                <img id="project_image" src="image/Project/econ.png"/>
+                <div class="project_info">
+                    <p class="title">Econ Engineering Calculator<br><span class="details">(2nd yr Project)</span></p>
+                    <p class="description">Econ Engineering Calculator is a mobile app to calculate the different
+                    economic interest.</p>
+                    <div class="view-btn">
+                        <a><li class="fa-regular fa-eye-slash"></li></a>
+                        <a href="https://github.com/DelPro123/Economic-Calculator-Mobile-APP-.git"><li class="fa-brands fa-github"></li></a>
+                    </div>
+                </div>
+            </div>
+            <h2><i class="fa-solid fa-laptop-code"></i>Graphic Design</h2>
+            <div class="project_content">
+                <div class="project_graphic">
+                    <img id="graphic_image" src="image/graphic/pegaxy.jpg"/>
+                    <img id="graphic_image" src="image/graphic/TAG1.png"/>
+                    <img id="graphic_image" src="image/graphic/TAG2.png"/>
+                    <img id="graphic_image" src="image/graphic/axie.png"/>
+                    <img id="graphic_imagess" src="image/graphic/GoMeta.gif"/>
+                    <img id="graphic_images" src="image/graphic/Gometabanner.png"/>
+                </div>
+            </div>
+    </div>
+    <div class="skills" id="skills">
+        <br><br><br>
+        <h2><i class="fa-solid fa-laptop-code"></i> Skills</h2>
+        <div class="skills_card">
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/html.svg"/>
+                <p id="skills_description">Html</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/css.svg"/>
+                <p id="skills_description">CSS</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/js.svg"/>
+                <p id="skills_description">JS</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/react.svg"/>
+                <p id="skills_description">React</p>
+            </div>  
+        </div>
+        <div class="skills_card">
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/figma.svg"/>
+                <p id="skills_description">Figma</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/adobexd.svg"/>
+                <p id="skills_description">Adobe xd</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/adobeps.svg"/>
+                <p id="skills_description">JS</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/adobeai.svg"/>
+                <p id="skills_description">Adobe ai</p>
+            </div>  
+        </div>
+        <div class="skills_card">
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/sketchup.svg"/>
+                <p id="skills_description">SketchUp</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/android.svg"/>
+                <p id="skills_description">Android Studio</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/git.svg"/>
+                <p id="skills_description">Github</p>
+            </div>
+            <div class="skills_content">
+                <img id="skill_image_size" src="image/Skills/trello.svg"/>
+                <p id="skills_description">Trello</p>
+            </div>  
+        </div>
+    </div>
+<div class="contact" id="contact">
+    <div class="contact_card">
+            <p id="get_in_touch">Get in Touch</p>
+            <div class="contact_email">
+            <p><i class="fa-regular fa-envelope"></i>siribanjohndel@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+6351604119</p>
+           </div>       
+            <div class="contact_details">
+                <p><a href="https://www.facebook.com/Siribz"><i class="fa-brands fa-facebook-messenger"></i></a></p>
+                <p><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdiscord.gg%2Fufxwv7sd%3Ffbclid%3DIwAR3cYY5rflrx2weBkTjJg4qmA3tDOFydpmwbZyYrHRowdv-NVer_GpKcT64&h=AT2167GiAzNLo8s1bNMwA5xh0iJ7JvU1bcfvSRSWdmqh1Dv37DWZ9zKVytiYbbg4A7GWnKlSQR_dwcP_5QBilzo0PjQM6DXIvgd7ZvWJolRVf0lkN7-pcz66T4NoRRWQng-MPA"><i class="fa-brands fa-discord"></i></a></p>
+                <p><a href="www.linkedin.com/in/johndel-siriban-0572b21ba"><i class="fa-brands fa-linkedin"></i></a></p>
+            </div>
+        </div>
+</div>
+<footer>
+   <p><span id="copyright">&copy;</span>2022 by del. All rights reserved.</p>
+</footer>
+<script src="index.js"/>
+
+</body>
+</html>
