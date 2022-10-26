@@ -35,11 +35,12 @@ h2{
 .nav{
     position: fixed;
     display: relative;
-    height: 5rem;
+    height: 3rem;
     width: 100%;
     cursor: pointer;
     z-index: 1;
     cursor: pointer;
+   
 }
 .navbar{
    display: flex;
@@ -56,7 +57,7 @@ h2{
 }
 
 #del::before{
-    content:attr(data-name);
+    content:"DEL";
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +65,7 @@ h2{
     height: 100%;
     color: #24B477;
     -webkit-text-stroke: 0vw #24B477;
-    border-right: .1px solid #24B477;
+    border: .1px solid #24B477;
     overflow: hidden;
 }
 .navbar_content, a{
@@ -436,9 +437,7 @@ footer{
 /*------------------------mobile---------------*/
 @media screen and (max-width:700px) {
     /*--------------------------Nav Page Mobile-----------------------*/
-       .nav{
-        position: absolute;
-       }
+    
        .navbar_content{
            display: none;
            position: absolute;
@@ -451,6 +450,8 @@ footer{
            z-index: -3;
           
        }
+       
+      
        .navbar_content a:hover{
         background-color: #24B477;
         color: #D9D9D9;
@@ -467,6 +468,7 @@ footer{
        .btn_bar{
            color: #D9D9D9;
            display:block;
+           justify-content: end;
            margin: 20px;
            font-size: 20px;
        }
@@ -478,9 +480,10 @@ footer{
            font-size: 20px;
            background-color:transparent;
            transition: 2s ease;
+           width: 0;
+           height: 0;
+           margin: 0;
            z-index: 1;
-           margin:10rem
-          
        }
        
        .fa-laptop-code{
@@ -529,6 +532,7 @@ footer{
        
        p #developer::before{
            content:attr(data-text);
+           display: flex;
            position: absolute;
            top: 0;
            left: 0;
@@ -550,10 +554,29 @@ footer{
                }
               
        }
+       #del{
+        margin:1rem;
+        position: relative;
+        font-size: 40px;
+        color: #1D2228;
+        -webkit-text-stroke: 0.1vw #24B477;   
+      }
+
+        #del::before{
+            content:"DEL";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 35px;
+            height: 100%;
+            color: #24B477;
+            -webkit-text-stroke: 0vw #24B477;
+            border: .1px solid #24B477;
+        }
        /*--------------------animate*/
        .dev{
            content: " ";
-           position: absolute;
+           position: relative;
            color: #24B477;
            font-size: 35px;
        }
@@ -624,7 +647,7 @@ footer{
            display: flex;
            display: row;
            height:380vh;
-           width: auto;
+           width: 100%;
            z-index: 1;
        }
        .project_card{
@@ -632,12 +655,13 @@ footer{
            flex-direction: column;
            justify-content:center;
            justify-items: center;
-           margin:-40px;
+          
        }
        .project_content{
            display: flex;
            flex-direction: column;
            text-align: center justify;
+           margin: -1px;
        }
 
      
@@ -760,7 +784,7 @@ footer{
 --------------------------------------
 --------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023px) {
- /*--------------------------Home Page-----------------------*/
+ /*--------------------------Home Page Tablet-----------------------*/
  .navbar_content{
     display: none;
     position: absolute;
@@ -815,19 +839,19 @@ h1{
 }
 
 #del::before{
-    content:attr(data-name);
+    content:"DEL.";
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 45px;
     height: 100%;
     color: #24B477;
     -webkit-text-stroke: 0vw #24B477;
-    border-right: .1px solid #24B477;
+    border: .1px solid #24B477;
     overflow: hidden;
 }
 
-/*--------------------------Home Page-----------------------*/
+/*--------------------------Home Page Tablet-----------------------*/
 .home{
     display: flex;
     justify-content: center;

@@ -1,6 +1,7 @@
 
 //----------------------navbar function--------------
 var nav = document.querySelector(".navbar_content");
+var nav1 = document.querySelector(".navbar_content");
 function hamburger_nav(){
     if ( nav.style.display === "none") {
         nav.style.display = "block";
@@ -75,7 +76,7 @@ document.body.onmousemove=function(event){
 }
 
 
-
+function Dev(){
 const text = document.querySelector(".dev");
 const textload=()=>{
   setTimeout(()=>{
@@ -87,6 +88,6 @@ const textload=()=>{
 }
 textload();
 setInterval(textload,8000);
-
-
+}
+Dev();
 
