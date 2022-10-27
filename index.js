@@ -60,7 +60,7 @@ window.addEventListener('resize', function (e) {
   }
 });
 
-//----------------------bug cursor animatio--------------
+//----------------------bug cursor animation--------------
 
 let cursor=document.querySelector(".cursor");
 document.body.onmousemove=function(event){
@@ -81,13 +81,18 @@ const text = document.querySelector(".dev");
 const textload=()=>{
   setTimeout(()=>{
     text.textContent = "Designer.";
+  
   },0);
   setTimeout(()=>{
     text.textContent = "Developer.";
+   
   },4000);
 }
 textload();
 setInterval(textload,8000);
 }
 Dev();
+
+
+
 

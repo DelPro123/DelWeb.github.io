@@ -578,7 +578,8 @@ footer{
            content: " ";
            position: relative;
            color: #24B477;
-           font-size: 35px;
+           font-size: 20px;
+           font-weight: bold;
        }
        .dev::before{
            content:" ";
