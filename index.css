@@ -369,6 +369,7 @@ p #developer::before{
 }
 /*--------------------------Contact Page-----------------------*/
 .contact{
+   cursor:url(image/cursor/cursor.svg),auto;
    display: flex;
    width: auto;
    justify-content:center;
@@ -1289,6 +1290,7 @@ p #developer::before{
 }
 /*--------------------------Contact Page-----------------------*/
 .contact{
+  cursor:url(image/cursor/cursor.svg),auto;
    display: flex;
    width: auto;
    justify-content:center;
