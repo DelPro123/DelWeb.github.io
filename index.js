@@ -1,6 +1,7 @@
 
 //----------------------navbar function--------------
 var nav = document.querySelector(".navbar_content");
+var nav1 = document.querySelector(".navbar_content");
 function hamburger_nav(){
     if ( nav.style.display === "none") {
         nav.style.display = "block";
@@ -81,13 +82,10 @@ function Dev(){
 const text = document.querySelector(".dev");
 const textload=()=>{
   setTimeout(()=>{
-    text.textContent = " Designer.";
-    
+    text.textContent = "Designer."
   },0);
   setTimeout(()=>{
-    text.textContent = " Developer.";
-   
-   
+    text.textContent = "Developer.";
   },4000);
 }
 textload();
