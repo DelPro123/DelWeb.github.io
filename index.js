@@ -56,7 +56,9 @@ window.addEventListener('resize', function (e) {
   var currentWidth = window.innerWidth;
   var e = document.getElementById('form-search');
   if (currentWidth<=LIMIT) {
-    e.style.display = 'block'
+    e.style.display = 'block';
+  }else{
+    console.log("error");
   }
 });
 
@@ -92,6 +94,27 @@ textload();
 setInterval(textload,8000);
 }
 Dev();
+
+
+function sendmail(){
+    var params={
+        email:document.getElementById("email").value,
+        message:document.getElementById("message").value
+    };
+    const serviceID= "service_a07cxb9";
+    const templateID ="template_aft8oy5";
+
+emailjs
+.send(serviceID,templateID,params)
+.then((res) => {
+    document.getElementById("email").value=" ";
+    document.getElementById("message").value=" ";
+    console.log(res);
+    alert("Thank you fo response");
+   
+})
+.catch((err) => console.log(err));
+}
 
 
 

@@ -4,10 +4,11 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/792fbaa353.js" crossorigin="anonymous"></script>
-  
+    
+    
     <title>Document</title>
 </head>
 <body class=".body">
@@ -49,8 +50,8 @@
                 <img data-aos="fade-right" data-aos-duration="900"  id="project_image" src="image/Project/fixpro.png"/>
             <div data-aos="zoom-in" data-aos-duration="900" class="project_info" >
                 <p class="title">ThunderPro. <span class="details">(Self Project)</span></p>
-                <p class="description">Fixpro is a outsourcing website to help the client interms of home service
-                like plumbing,fixing gudget, devices, appliances and many more..</p>
+                <p class="description">Fixpro is a outsourcing website to help the clients interms of home services
+                like plumbing,fixing gudgets, devices, appliances and many more..</p>
                 <div class="view-btn">
                     <a href="https://github.com/DelPro123/fixpro.git"><li class="fa-regular fa-eye"></li></a>
                     <a href="https://delpro123.github.io/fixpro/"><li class="fa-brands fa-github"></li></a>
@@ -61,8 +62,8 @@
                 <img data-aos="fade-right" data-aos-duration="900" id="project_image" src="image/Project/defiquests.png" />
                 <div data-aos="zoom-in" data-aos-duration="900" class="project_info" >
                     <p class="title">defiQuests. <span class="details">(Web-Intern Project)</span></p>
-                    <p class="description">My web intern experienced, I was deployed in the web3 project and it
-                     was greate experienced to team in the Sr.Dev, Jr.Dev and QA Engineer. </p>
+                    <p class="description">I was deployed in the web3 project and working with
+                      WELA School System team. </p>
                      <div class="view-btn">
                         <a href="https://www.defiquests.com/"><li class="fa-regular fa-eye"></li></a>
                         <a><li class="fa-solid fa-handshake-slash"></li></a>
@@ -73,7 +74,7 @@
                 <embed><iframe data-aos="fade-right" data-aos-duration="900" id="project_video"  src="https://www.youtube.com/embed/quj1K5GA1nE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen   ></iframe></embed >
                 <div data-aos="zoom-in" data-aos-duration="900" class="project_info" >
                     <p class="title">IoT-Based Fish Pond Water<br>Condition Monitoring System<br><span class="details">(Thesis Project)</span></p>
-                    <p class="description">A research project and an IoT devices to monitor the water parameter
+                    <p class="description">A research project an to monitor the water parameter by
                     using sensors to help the fishery and aquarium breeder.</p>
                     <div class="view-btn">
                         <a href="https://www.youtube.com/watch?v=quj1K5GA1nE&t=3s"><li class="fa-regular fa-eye"></li></a>
@@ -170,18 +171,26 @@
         </div>
     </div>
 <div class="contact" id="contact">
+    <div class="contact-flex">
     <div class="contact_card" data-aos="zoom-in-up" data-aos-duration="800">
-            <p id="get_in_touch">Get in Touch</p>
+            <p id="get_in_touch">Let's Connect!</p>
             <div class="contact_email">
             <p><i class="fa-regular fa-envelope"></i>siribanjohndel@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+6351604119</p>
+            <p><i class="fa-solid fa-phone"></i>+63951604119</p>
            </div>       
             <div class="contact_details">
                 <p><a href="https://www.facebook.com/Siribz"><i class="fa-brands fa-facebook-messenger"></i></a></p>
                 <p><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdiscord.gg%2Fufxwv7sd%3Ffbclid%3DIwAR3cYY5rflrx2weBkTjJg4qmA3tDOFydpmwbZyYrHRowdv-NVer_GpKcT64&h=AT2167GiAzNLo8s1bNMwA5xh0iJ7JvU1bcfvSRSWdmqh1Dv37DWZ9zKVytiYbbg4A7GWnKlSQR_dwcP_5QBilzo0PjQM6DXIvgd7ZvWJolRVf0lkN7-pcz66T4NoRRWQng-MPA"><i class="fa-brands fa-discord"></i></a></p>
                 <p><a href="www.linkedin.com/in/johndel-siriban-0572b21ba"><i class="fa-brands fa-linkedin"></i></a></p>
             </div>
-        </div>
+    </div>
+    </div>
+    <div class="contact_cards" data-aos="zoom-in-up" data-aos-duration="800">
+        <input type="text" id="email"  placeholder=" name or e-mail:" autocomplete="off"/><br>
+        <input type="text" id="message"  placeholder="leave a messages"  autocomplete="off"/><br>
+        <button class="submit" onclick="sendmail()">submit</button>
+    </div>
+
 </div>
 <footer>
    <p><span id="copyright">&copy;</span>2022 by del. All rights reserved.</p>
@@ -190,7 +199,15 @@
 <script>
     AOS.init();
 </script>
-<script src="index.js"/>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="index.js"></script>
+<script>
+   (function(){
+      emailjs.init("zBS7jfM3NdUy08GSL");
+   })();
+</script>
 
 </body>
 </html>
