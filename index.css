@@ -827,6 +827,9 @@ footer{
            padding: 5rem auto;
            cursor: pointer;
        }
+       .skills_content:hover{
+        animation: float 1.5s ease-in-out infinite;
+       }
        #skill_image_size{
         width: 100%;
         height: auto;
@@ -1287,6 +1290,9 @@ p #developer::before{
     text-align: center;
     cursor: pointer;
   
+}
+.skills_content:hover{
+    animation: float 1.5s ease-in-out infinite;
 }
 #skill_image_size{
     width: 50%;
