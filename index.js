@@ -101,19 +101,23 @@ function sendmail(){
         email:document.getElementById("email").value,
         message:document.getElementById("message").value
     };
+    var pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
     const serviceID= "service_a07cxb9";
     const templateID ="template_aft8oy5";
-
-emailjs
-.send(serviceID,templateID,params)
-.then((res) => {
-    document.getElementById("email").value=" ";
-    document.getElementById("message").value=" ";
-    console.log(res);
-    alert("Thank you fo response");
-   
-})
-.catch((err) => console.log(err));
+if(params.email.match(pattern)){
+  emailjs
+  .send(serviceID,templateID,params)
+  .then((res) => {
+      document.getElementById("email").value="";
+      document.getElementById("message").value="";
+      console.log(res);
+      alert("Thank you for the response");
+     
+  })
+  .catch((err) => console.log(err));
+}else{
+  alert("Please add a messages or valid email");
+}
 }
 
 
