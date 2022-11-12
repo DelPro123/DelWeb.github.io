@@ -57,8 +57,13 @@ window.addEventListener('resize', function (e) {
   var e = document.querySelector('body');
   if (currentWidth<=LIMIT) {
     e.style.display = 'block';
+    nav.style.display = 'block';
+    nav.style.display = 'flex';
   }else{
-    console.log("error");
+    e.style.display = 'block';
+    nav.style.display = 'none';
+  
+
   }
 });
 
