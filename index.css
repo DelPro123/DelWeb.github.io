@@ -18,7 +18,7 @@
     background-color:transparent;
     transition: 2s ease;
     z-index: 1;
-    margin:10rem
+    margin:-3rem;
    
 }
 
@@ -355,6 +355,9 @@ p #developer::before{
     cursor: pointer;
   
 }
+.skills_content:hover{
+    animation: float 1.5s ease-in-out infinite;
+}
 #skill_image_size{
     width: 50%;
     height: auto;
@@ -466,6 +469,15 @@ p #developer::before{
     border: 1px solid #24B477;
     border-radius: 3px;
     
+}
+.submit:hover{
+    color: #24B477;
+    font-size: 1rem;
+    padding: 3px 10px;
+    background-color:#1D2228 ;
+    border: 1px solid #24B477;
+    border-radius: 3px;
+    transition: .5s;
 }
 footer{
    text-align: center;
@@ -953,7 +965,7 @@ footer{
 ----------------------------------
 --------------------------------------
 --------------------------------------*/
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:701px) and (max-width:1023px) {
  /*--------------------------Home Page Tablet-----------------------*/
  .navbar_content{
     display: none;
