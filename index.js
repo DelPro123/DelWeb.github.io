@@ -52,18 +52,15 @@ function Contact(){
   }
 }
 window.addEventListener('resize', function (e) {
-  LIMIT=10000;
+  LIMIT=1030;
   var currentWidth = window.innerWidth;
-  var e = document.querySelector('body');
-  if (currentWidth<=LIMIT) {
+   e = document.querySelector('body');
+  if (currentWidth>LIMIT) {
     e.style.display = 'block';
-    nav.style.display = 'block';
-    nav.style.display = 'flex';
+    nav.style.display='block';
+    nav.style.display='flex';
   }else{
-    e.style.display = 'block';
-    nav.style.display = 'none';
-  
-
+    nav.style.display='none';
   }
 });
 
