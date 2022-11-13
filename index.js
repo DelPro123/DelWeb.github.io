@@ -11,7 +11,7 @@ function hamburger_nav(){
       }
 }
 function Home(){
-  WIDTH_LIMIT=1023;
+  WIDTH_LIMIT=1230;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
     nav.style.display = 'block';
@@ -22,7 +22,7 @@ function Home(){
 }
 
 function Project(){
-  WIDTH_LIMIT=1023;
+  WIDTH_LIMIT=1230;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
     nav.style.display = 'block';
@@ -32,7 +32,17 @@ function Project(){
   }
 }
 function Skills(){
-  WIDTH_LIMIT=1023;
+  WIDTH_LIMIT=1230;
+  var currentWidth = window.innerWidth;
+  if (currentWidth > WIDTH_LIMIT) {
+    nav.style.display = 'block';
+    nav.style.display = 'flex';
+  } else {
+      nav.style.display = 'none';
+  }
+}
+function ABOUT(){
+  WIDTH_LIMIT=1230;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
     nav.style.display = 'block';
@@ -42,7 +52,7 @@ function Skills(){
   }
 }
 function Contact(){
-  WIDTH_LIMIT=1023;
+  WIDTH_LIMIT=1230;
   var currentWidth = window.innerWidth;
   if (currentWidth > WIDTH_LIMIT) {
     nav.style.display = 'block';
@@ -52,7 +62,7 @@ function Contact(){
   }
 }
 window.addEventListener('resize', function (e) {
-  LIMIT=1030;
+  LIMIT=1230;
   var currentWidth = window.innerWidth;
    e = document.querySelector('body');
   if (currentWidth>LIMIT) {

@@ -972,7 +972,7 @@ footer{
 ----------------------------------
 --------------------------------------
 --------------------------------------*/
-@media screen and (min-width:701px) and (max-width:1023px) {
+@media screen and (min-width:701px) and (max-width:1230px) {
  /*--------------------------Home Page Tablet-----------------------*/
  .navbar_content{
     display: none;
@@ -1409,7 +1409,7 @@ footer{
 .timeline-section{
 	background-color:transparent;
 	min-height: 100vh;
-	padding: 100px 15px;
+	padding: 10px 15px;
 }
 .timeline-items{
 	max-width: 1000px;
