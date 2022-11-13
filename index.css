@@ -17,7 +17,7 @@
     font-size: 30px;
     background-color:transparent;
     transition: 2s ease;
-    z-index: 1;
+    z-index: 2;
     margin:-3rem;
    
 }
@@ -38,7 +38,7 @@ h2{
     height: 3rem;
     width: 100%;
     cursor: pointer;
-    z-index: 1;
+    z-index: 10;
     cursor: pointer;
    
 }
@@ -78,7 +78,7 @@ h2{
 
 .navbar_content li{
    margin: 1rem;
-   font-size:25px;
+   font-size:1.3rem;
    color: #D9D9D9;
 }
 
@@ -1397,6 +1397,112 @@ footer{
     color: #24B477;
 }
 
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    cursor:url(image/cursor/cursor.svg),auto;
+}
+
+
+.timeline-section{
+	background-color:transparent;
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+    z-index: 1;
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #24B477;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+    z-index: 1;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #24B477;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    display: flex;
+    flex-direction: column;
+    background-color: #1D2228;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+	padding: 30px;
+	border-radius: 5px;
+    justify-content: center;
+    justify-items: center;
+}
+.timeline-content:hover{
+    animation: float 1.5s ease-in-out infinite;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #24B477;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+    text-align: start;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+    text-align: justify;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
 }
 
 
