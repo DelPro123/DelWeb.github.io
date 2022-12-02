@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;800;900&display=swap');
 *{  
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #1D2228;
     scroll-behavior: smooth;
 }
@@ -60,6 +59,7 @@ h2{
 #del::before{
     content:"DEL";
     position: absolute;
+    font-size: 40px;
     top: 0;
     left: 0;
     width: 50%;
@@ -140,7 +140,7 @@ p #developer::before{
     content:attr(data-text);
     display: flex;
     position: absolute;
-    top: 0;
+    top: -3%;
     left: 0;
     width: 0;
     height: 100%;
@@ -176,7 +176,7 @@ p #developer::before{
     height: 100%;
     background-color: #1D2228;
     border-left: 2px solid #24B477;
-    animation: animates 4s steps(12) infinite;
+    animation: animates 4.1s steps(12) infinite;
 }
 
 @keyframes animates {
@@ -307,7 +307,7 @@ p #developer::before{
 }
 .description{
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .view-btn a{
     margin-top: 90px;
@@ -432,7 +432,7 @@ p #developer::before{
    justify-content:center;
    justify-items: center;
    margin:10rem;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Poppins', sans-serif;
 
 }
 .contact_card{
@@ -536,7 +536,7 @@ footer{
    text-align: center;
    font-size: 13px;
    color: #D9D9D9;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Poppins', sans-serif;
 
 }
 #copyright{
@@ -631,7 +631,7 @@ footer{
            flex-direction: column;
        }
        #self-intro{
-           font-size: 30px;
+           font-size: 20px;
            color: #D9D9D9;
            
        }
@@ -654,7 +654,7 @@ footer{
            content:attr(data-text);
            display: flex;
            position: absolute;
-           top: 0;
+           top: -3%;
            left: 0;
            width: 0;
            height: 100%;
@@ -699,7 +699,7 @@ footer{
            position: relative;
            color: #24B477;
            font-size: 21px;
-           font-weight: bold;
+           width: 300px;
        }
        .dev::before{
           display: flex;
@@ -707,7 +707,7 @@ footer{
            position: absolute;
            top: 0;
            left: 0;
-           width: 100%;
+           width: 99%;
            height: 100%;
            background-color: #1D2228;
            border-left: 1px solid #24B477;
@@ -717,7 +717,7 @@ footer{
        @keyframes animates {
                40%,60%
                {
-                 left: 100%;
+                 left: 99%;
                }
                90%
                {
@@ -842,7 +842,7 @@ footer{
         }
         .description{
             color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         .view-btn a{
             margin-top: 90px;
@@ -961,7 +961,7 @@ footer{
         text-align: center;
     }    
        #skills_description{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Poppins', sans-serif;
            color: #D9D9D9;
            font-size: 10px;
            font-weight: medium;
@@ -972,7 +972,7 @@ footer{
     width: auto;
     justify-content:center;
     justify-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     flex-direction: column;
  }
  .contact-flex{
@@ -1077,7 +1077,7 @@ footer{
     text-align: center;
     font-size: 13px;
     color: #D9D9D9;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
  
  }
  #copyright{
@@ -1207,7 +1207,7 @@ p #developer::before{
     content:attr(data-text);
     display: flex;
     position: absolute;
-    top: 0;
+    top: -3%;
     left: 0;
     width: 0;
     height: 100%;
@@ -1375,7 +1375,7 @@ p #developer::before{
 }
 .description{
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .view-btn a{
     margin-top: 90px;
@@ -1459,7 +1459,7 @@ p #developer::before{
    justify-content:center;
    justify-items: center;
    margin:10rem;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Poppins', sans-serif;
 
 }
 .contact_card{
@@ -1520,7 +1520,7 @@ footer{
    text-align: center;
    font-size: 12px;
    color: #D9D9D9;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: 'Poppins', sans-serif;
 
 }
 #copyright{
