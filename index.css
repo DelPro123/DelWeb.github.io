@@ -281,7 +281,7 @@ p #developer::before{
 }
 #project_video{
     width:50%;
-    height:315px;
+    height:380px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(9, 9, 9, 0.25);
 }
